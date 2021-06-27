@@ -36,6 +36,7 @@ public class base {
 		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 		String DestFile=System.getProperty("user.dir")+"/reports/"+testCaseName+".png";
 		FileUtils.copyFile(SrcFile,new File(DestFile));
+		System.out.println(DestFile);
 		return DestFile;
 		
 	}
